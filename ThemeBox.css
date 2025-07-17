@@ -1,0 +1,46 @@
+.box-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.box {
+  padding: 20px;
+  height: 200px;
+  width: 400px;
+  border-radius: 10px;
+  border: 2px solid;
+  text-align: center;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.box-wrapper.light .box {
+  background: #fff;
+  color: #222;
+  border-color: #ccc;
+}
+
+.box-wrapper.dark .box {
+  background: #1e1e1e;
+  color: #f1f1f1;
+  border-color: #444;
+}
+
+button {
+  margin-bottom: 15px;
+  padding: 6px 14px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.mode-display {
+  margin-top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    background-image: linear-gradient(green,rgb(231, 138, 138),yellow);
+    color: rgb(29, 34, 29);
+    padding: 20px;
+    border-radius: 25px;
+    border: solid;
+    height: 700px;
+    width: 400px;
+    text-align: center;
+}
+.good{
+    background-color: brown;
+    height: 80px;
+    width: 80px;
+    border: solid;
+    border-radius: 50px;
+}
+.bad{
+  
+    background-color: rgb(41, 211, 223);
+   height: 80px;
+    width: 80px;
+    border: solid;
+    border-radius: 50px;
+}
+.new{
+    background-color: rgb(189, 41, 226);
+    height: 80px;
+    width: 80px;
+    border: solid;
+    border-radius: 50px;
+    
+}

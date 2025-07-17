@@ -1,0 +1,26 @@
+.shape{
+    display: flex;
+    background-image: linear-gradient(yellow, rgb(136, 236, 136),rgb(82, 193, 221));
+    height:200px ;
+    width: 300px;
+}
+.box{
+    border: 10px solid black;
+    height: 100px;
+    width: 400px;
+    border-radius: 2%;
+    margin: 100px;
+    background-image: linear-gradient(red,yellow);
+    text-align: center;
+}
+.form{
+    content: none;
+    text-align: center;
+    border: 5 px solid black;
+}
+.on{
+    color: green;
+}
+.off{
+    color: red;
+}
