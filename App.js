@@ -1,56 +1,31 @@
-import Letter from "./new1";
-import Unordered from "./order";
-import "./new.css";
-import WeatherCard from "./WeatherCard";
-import "./QuoteBox.css";
-import Cars from "./Carinfo";
-import Message from "./Greetings";
-import CourseCard from "./q4";
-import Greetings from "./Greeting";
-import Land from "./land";
-import "./grid.css";
-import Country from "./capital";
-import "./capital.css";
-import Myform from"./grat";
-import Mail from "./mail";
-import Validation from "./Proptype";
-import Newsletter from "./news";
-import UserStatusSwitcher from "./UserStatusSwitcher";
-import Op from "./click";
-import Feedback from "./Feedback";
-import ExpenseTracker from "./Expense"
-import BugReportForm from "./TechBug";
-import ThemeBox from "./ThemeBox";
-import "./ThemeBox.css";
+const express = require('express');
+const app = express();
+const PORT = 3001;
 
+app.get('/user', (req, res) => {
+    res.send('User path is create');
+});
+app.get('/live', (req, res) => {
+    res.send('Live path is create');
+});
+app.get('/name', (req, res) => {
+    res.send('Hello Datta');
+});
+app.get('/latter', (req, res) => {
+    res.send('User path is create but latter');
+});
 
-function App() {
-  return (
-    <div className="App">
-      <Letter />
-      <Message />
-      <Unordered />
-      <WeatherCard />
-      <Cars />
-      <Message />
-      <CourseCard/>
-      <Greetings/>
-      <h1>Famous Landmarks :-</h1>
-      <Land/>
-      <Country/> 
-      <Myform/>
-      <Mail/>
-      <Validation /> 
-      <Newsletter/>
-      <UserStatusSwitcher/>
-      < Op />
-      <Feedback />
-      <ExpenseTracker />
-      <BugReportForm />
-      <ThemeBox />
+// New route to send all outputs at once
+app.get('/all', (req, res) => {
+    const combinedOutput = `
+        User: User path is create
+        Live: Live path is create
+        Name: Hello Datta
+        Latter: User path is create but latter
+    `;
+    res.send(combinedOutput);
+});
 
-    </div>
-  );
-}
-
-export default App;
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
